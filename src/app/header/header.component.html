@@ -1,9 +1,9 @@
 <nav class="blue lighten-2">
   <div class="nav-wrapper container">
     <a href="#" class="brand-logo left" routerLink="/">
-      <img src="" alt="">
+      <img src="/assets/images/logo.png" alt="">
     </a>
-    <ul class="right">
+    <ul class="right">import { Component } from '@angular/core';
       <div *ngIf="_tokenService.currentUserData == null">            
         <li><a href="#" routerLink="/login">Login</a></li>
         <li><a href="#" routerLink="/register">Register</a></li>      
