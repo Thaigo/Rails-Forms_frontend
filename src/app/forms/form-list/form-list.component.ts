@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from '../../shared/form.service';
-import { MzToastService} from 'ng2-materialize';
+import { MzToastService } from 'ng2-materialize';
 
 import { Form } from '../../shared/form.model';
 import { Question } from '../../shared/question.model';
@@ -15,7 +15,6 @@ export class FormListComponent implements OnInit {
   private forms: Form[] = [];
 
   constructor(private formService: FormService, private toastService: MzToastService) { }
-
 
   ngOnInit() {
     this.formService.getForms().subscribe(data => {
